@@ -1,0 +1,25 @@
+.form-category {
+    display: flex;
+    border-bottom: 1px solid darkgray;
+}
+
+label input {
+	appearance: none;
+    margin-bottom: 50px;
+}
+
+label span {
+	
+	font-size: 14px;
+	padding: 5px 20px;
+}
+
+label input:checked + span {
+	color: orangered;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    background: #ddd;
+}

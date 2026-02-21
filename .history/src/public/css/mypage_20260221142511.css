@@ -1,0 +1,25 @@
+.profile {
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.profile-div {
+    display: flex;
+    width: 50%;
+}
+
+.profile-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #ddd;
+}
+
+.profile-a {
+    text-decoration: none;
+    border: 1px solid orangered;
+    color: orangered;
+    border-radius: 3px;
+    padding: 5px 15px;
+}

@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+}
+
+.header-logo {
+    margin: 10px;
+}
+
+.header-inpu-search {
+    width: 450px;
+    height: 45px;
+    margin: 10px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.button {
+    margin-right: 20px;
+    padding: 5px 15px;
+    font-size: 15px;
+    background: black;
+    color: white;
+}
+
+.button-sell {
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 5px 15px;
+    font-size: 15px;
+    color: black;
+    background: white;
+}
