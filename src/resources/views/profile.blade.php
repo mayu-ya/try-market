@@ -10,6 +10,7 @@
         <h1 class="title-h">プロフィール設定</h1>
     </div>
 
+    
     <form class="form" action="/mypage" method="post">
         @csrf
         <div class="form-img">
@@ -55,6 +56,6 @@
         <div class="form-button">
             <button class="form-button-submit">更新する</button>
         </div>
-    </form>
+    </form>  
 </div>
 @endsection

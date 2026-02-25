@@ -10,7 +10,9 @@ class MypageController extends Controller
 {
     public function index()
     {
-        return view('profile');
+        $profile = Profile::select(['profile_img', 'name', 'post_code', 'address', 'building'])->get();
+
+        return view('profile', ['profiles' => $profile]);
     }
 
     public function upsert(ProfileRequest $request)
