@@ -32,4 +32,11 @@ class Merchandise extends Model
     {
         return $this->belongsToMany(Category::class);
     }
+
+    public function scopeKeywordSearch($query, $keyword)
+    {
+        if(!empty($keyword)) {
+            $query->where('merchandise_name', 'like', '%' . $keyword . '%');
+        }
+    }
 }

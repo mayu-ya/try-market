@@ -14,9 +14,10 @@
             <div class="header-inner">
                 <a href="/"><img src="../img/logo.png" alt="COACHTECHヘッダーロゴ" class="header-logo"></a>
             </div>
-            <form class="header-form">
+            <form class="header-form" action="/search" method="get">
+                @csrf
                 <div class="header-input">
-                    <input type="search" class="header-inpu-search" placeholder="なにをお探しですか？">
+                    <input type="text" class="header-inpu-search" name="keyword" placeholder="なにをお探しですか？" value="{{ old('keyword') }}">
                 </div>
             </form>
             <nav class="nav">

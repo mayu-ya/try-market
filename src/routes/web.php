@@ -18,6 +18,8 @@ use App\Http\Controllers\MypageController;
 */
 
 Route::get('/', [TryController::class, 'index']);
+Route::get('/search', [TryController::class, 'search']);
+Route::get('/item/{item_id}', [TryController::class, 'show'])->name('item.show');
 
 Route::get('/mypage', [ProfileController::class, 'index'])->name('mypage.index');
 

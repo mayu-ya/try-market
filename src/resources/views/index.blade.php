@@ -13,7 +13,7 @@
     <div class="form-list">
         <div class="list">
             @foreach ($merchandises as $merchandise)
-                <a href=""><img src="{{ $merchandise->image }}" alt="商品画像" class="form-img"></a>
+                <a href="{{ route('item.show')}}"><img src="{{ $merchandise->image }}" alt="商品画像" class="form-img"></a>
                 <div class="font">
                     <div class="name">{{ $merchandise->merchandise_name }}</div>
                     <div class="sold">

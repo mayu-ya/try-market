@@ -58,7 +58,7 @@
         <input type="text" class="content-text">
     </div>
     <div class="content">
-        <h3 class="content-h">商品名</h3>
+        <h3 class="content-h">商品の説明</h3>
         <textarea class="content-textarea" name=""></textarea>
     </div>
     <div class="content">

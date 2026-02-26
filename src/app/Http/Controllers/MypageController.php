@@ -22,7 +22,7 @@ class MypageController extends Controller
             ['user_id' => auth()->Id()],
             [
                 'user_id' => auth()->id(),
-                'profile_img' => $profile['profile_img'],
+                // 'profile_img' => $profile['profile_img'],
                 'name' => $profile['name'],
                 'post_code' => $profile['post_code'],
                 'address' => $profile['address'],
