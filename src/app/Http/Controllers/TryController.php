@@ -9,7 +9,7 @@ class TryController extends Controller
 {
     public function index()
     {
-        $merchandises = Merchandise::select('image', 'merchandise_name')->get();
+        $merchandises = Merchandise::select('id', 'image', 'merchandise_name')->get();
         return view('index', ['merchandises' => $merchandises]);
     }
 
@@ -20,12 +20,10 @@ class TryController extends Controller
         return view('index', compact('merchandises'));
     }
 
-    public function show($item_id)
+    public function show($item)
     {
-        $data = [
-            'merchandise_id' => item_id,
-        ];
-        
-        return view('item', $data);
+        $merchandises = Merchandise::find('id');
+
+        return view('item', ['item' => $merchandises]);
     }
 }
